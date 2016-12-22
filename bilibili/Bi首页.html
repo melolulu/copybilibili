@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="shortcut icon" href="images/icons/shouye.ico">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/bilibili.css">
+</head>
+<body>
+	<!-- <div id="mask">
+	</div> -->
+	<!-- 登陆框 -->
+	<!-- <div id="login">
+		<div class="loginCon">
+			<h1>登陆</h1>
+			<form action="" method="post">
+				<input type="text" name="name">
+				<input type="password" name="password">
+				<input type="submit" name="登陆">
+			</form>
+			<div class="close"></div>
+		</div>
+	</div> -->
+	<div class="container">
+		<!-- 头部内容 -->
+		<div class="head">
+			<div class="top">
+				<ul class="left">
+					<li class="home">
+						<a href="Bi首页.html">主站</a>
+					</li>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">图鉴</a></li>
+					<li class="shouc"><a href="#" onclick="addfav()">加入收藏</a></li>
+					<li class="zhuy"><a href="#" onclick="setHome(this)">设为主页</a></li>
+				</ul>
+				<ul class="right">
+					<li class="user">
+						<img src="images/3.png">
+						<div class="userInfo">
+							<h1>gakki</h1>
+							<ul>
+								<li><a href="#">个人设置</a></li>
+								<li><a href="#">消息</a></li>
+								<li><a href="#">等级</a></li>
+								<li><a href="#">推出登陆</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a class="rightlogin" href="#">登陆</a></li>
+					<li><a href="#">注册</a></li>
+					<li><a href="#" class="i-link">投稿</a></li>
+				</ul>
+			</div>
+			<img src="images/bibibg.jpg">
+			<div id="date"></div>
+			<div class="num fl">
+			</div>
+			<!-- 放假倒计时 -->
+			<div class="mid-autumn">
+				<h1>倒计时</h1>
+				<div id="mid-autumn">
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<div class="menu-r fr">
+				<a  id="ewm" href="#" class="fr"></a>
+				<div id="menu-r-app" class="fr"></div>
+			</div>
+		</div>
+		<!-- 头部内容结束 -->
+		<!-- 中间各种内容部分 -->
+		<div class="middlecontent">
+			<!-- 侧边栏 -->
+			<div class="index-nav">
+				<div class="nav-list">
+				    <div class="n-i sortable">
+				        <div class="name">直播</div>
+				    </div>
+				    <div class="n-i sortable">
+				        <div class="name">动画</div>
+				    </div>
+				    <div class="n-i sortable">
+				        <div class="name">番剧</div>
+				    </div>
+				    <div class="n-i sortable">
+				        <div class="name">音乐</div>
+				    </div>
+				    <div class="n-i sortable">
+				        <div class="name">舞蹈</div>
+				    </div>
+				    <div class="n-i sortable">
+				        <div class="name">游戏</div>
+				    </div>
+				    <div class="n-i sortable">
+				        <div class="name">科技</div>
+				    </div>
+				    <div class="n-i sortable">
+				        <div class="name">生活</div>
+				    </div>
+				    <div class="n-i sortable">
+				        <div class="name">鬼畜</div>
+				    </div>
+				    <div class="n-i sortable">
+				        <div class="name">时尚</div>
+				    </div>
+				    <div class="n-i sortable">
+				        <div class="name">广告</div>
+				    </div>
+				    <div class="n-i sortable">
+				        <div class="name">娱乐</div>
+				    </div>
+				    <div class="n-i sortable">
+				        <div class="name">电影</div>
+				    </div>
+				    <div class="n-i sortable">
+				        <div class="name">TV剧</div>
+				    </div>
+				    <div class="pointer-block" style="top: 0px; left: 0px; display: none;"></div>
+				    <div class="n-i customize" title="自定义"><i class="n-icon-sort"></i>
+				        <p>排序</p>
+				    </div>
+				</div>
+				<div class="n-i gotop">
+				    <div class="s-line"></div>
+				    <div class="btn_gotop" title="返回顶部"></div>
+				</div>
+			</div>
+			<!-- 头部展示内容 -->
+			<div class="container-top-wrapper">
+				<!-- 轮播图 -->
+				<div id="Carousel" class="fl">
+					<div id="carousel">
+						<a href="#">
+							<img src="images/nidemz.png">
+							<span>你的名字</span>
+						</a>
+						<a href="#">
+							<img src="images/rain-floor-water-wet-69927.jpeg">
+							<span>rain</span>
+						</a>
+						<a href="#">
+							<img src="images/pexels-photo (1).jpg">
+							<span>电影</span>
+						</a>
+						<a href="#">
+							<img src="images/DONGTU.gif">
+							<span>广告</span>
+						</a>
+						<a href="#">
+							<img src="images/skyline-buildings-new-york-skyscrapers.jpg">
+							<span>New York</span>
+						</a>
+					</div>
+				</div>
+				<div id="btns">
+					<li class="lichange"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</div>
+				<!-- 顶部右侧内容 -->
+				<ul class="top-rlist fr">
+					<li>
+						<div class="top-item">
+							<a href="#">
+								<div class="preview">
+									<img src="images/4.png" title="唇上之歌剧照">
+								</div>
+								<div class="info">
+									<div class="t">[剧照]</div>
+									<p class="author">作者:lgl</p>
+									<p class="play">播放量:66666</p>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="top-item">
+							<a href="#">
+								<div class="preview">
+									<img src="images/aA.jpg" title="唇上之歌剧照">
+								</div>
+								<div class="info">
+									<div class="t">[剧照]</div>
+									<p class="author">作者:lgl</p>
+									<p class="play">播放量:66666</p>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="top-item">
+							<a href="#">
+								<div class="preview">
+									<img src="images/1.png" title="唇上之歌剧照">
+								</div>
+								<div class="info">
+									<div class="t">[剧照]</div>
+									<p class="author">作者:lgl</p>
+									<p class="play">播放量:66666</p>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="top-item">
+							<a href="#">
+								<div class="preview">
+									<img src="images/2.png" title="唇上之歌剧照">
+								</div>
+								<div class="info">
+									<div class="t">[剧照]</div>
+									<p class="author">作者:lgl</p>
+									<p class="play">播放量:66666</p>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="top-item">
+							<a href="#">
+								<div class="preview">
+									<img src="images/3.png" title="唇上之歌剧照">
+								</div>
+								<div class="info">
+									<div class="t">[剧照]</div>
+									<p class="author">作者:lgl</p>
+									<p class="play">播放量:66666</p>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="top-item">
+							<a href="#">
+								<div class="preview">
+									<img src="images/x.png" title="唇上之歌剧照">
+								</div>
+								<div class="info">
+									<div class="t">[剧照]</div>
+									<p class="author">作者:lgl</p>
+									<p class="play">播放量:66666</p>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="top-item">
+							<a href="#">
+								<div class="preview">
+									<img src="images/x.png" title="唇上之歌剧照">
+								</div>
+								<div class="info">
+									<div class="t">[剧照]</div>
+									<p class="author">作者:lgl</p>
+									<p class="play">播放量:66666</p>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="top-item">
+							<a href="#">
+								<div class="preview">
+									<img src="images/x.png" title="唇上之歌剧照">
+								</div>
+								<div class="info">
+									<div class="t">[剧照]</div>
+									<p class="author">作者:lgl</p>
+									<p class="play">播放量:66666</p>
+								</div>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- 推广内容直播 -->
+			<div class="container-row">
+				<div class="container-row-t">
+					<span class="b-i"></span>
+					<span class="b-t">
+						<h2>直播</h2>
+					</span>
+					<a href="#">TGS 2016要发车了！</a>
+				</div>
+				<div class="container-row-con clear">
+					<ul class="tg-list" id="tg-list">
+						<li>
+							<div class="tg-list-pic">
+								<a href="#">
+									<div class="preview">
+										<img src="images/nidemz.png" title="你的名字">
+										<div class="rightbottomtime">60.66</div>
+									</div>
+									<div class="vname">你的名字</div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="tg-list-pic">
+								<a href="#">
+									<div class="preview">
+										<img src="images/aA.jpg" title="唇上之歌剧照">
+										<div class="rightbottomtime">60.66</div>
+									</div>
+									<div class="vname">掟上今日子的备忘录02</div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="tg-list-pic">
+								<a href="#">
+									<div class="preview">
+										<img src="images/x.png" title="唇上之歌剧照">
+										<div class="rightbottomtime">60.66</div>
+									</div>
+									<div class="vname">掟上今日子的备忘录03</div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="tg-list-pic">
+								<a href="#">
+									<div class="preview">
+										<img src="images/x.png" title="唇上之歌剧照">
+										<div class="rightbottomtime">60.66</div>
+									</div>
+									<div class="vname">掟上今日子的备忘录10</div>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 推广内容动画 -->
+			<div class="container-row">
+				<div class="container-row-t">
+					<span class="b-i"></span>
+					<span class="b-t">
+						<h2>动画</h2>
+					</span>
+					<a href="#">TGS 2016要发车了！</a>
+				</div>
+				<div class="container-row-con clear">
+					<ul class="tg-list" id="tg-list">
+						<li>
+							<div class="tg-list-pic">
+								<a href="#">
+									<div class="preview">
+										<img src="images/nidemz.png" title="你的名字">
+										<div class="rightbottomtime">60.66</div>
+									</div>
+									<div class="vname">你的名字</div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="tg-list-pic">
+								<a href="#">
+									<div class="preview">
+										<img src="images/龙珠.jpg" title="唇上之歌剧照">
+										<div class="rightbottomtime">60.66</div>
+									</div>
+									<div class="vname">龙珠超</div>
+								</a>
+								
+							</div>
+						</li>
+						<li>
+							<div class="tg-list-pic">
+								<a href="#">
+									<div class="preview">
+										<img src="images/名侦探.jpg" title="唇上之歌剧照">
+										<div class="rightbottomtime">60.66</div>
+									</div>
+									<div class="vname">名侦探柯南</div>
+								</a>
+								
+							</div>
+						</li>
+						<li>
+							<div class="tg-list-pic">
+								<a href="#">
+									<div class="preview">
+										<img src="images/友人帐.jpg" title="唇上之歌剧照">
+										<div class="rightbottomtime">60.66</div>
+									</div>
+									<div class="vname">夏目友人帐</div>
+								</a>
+								
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 推广内容番剧 -->
+			<div class="container-row">
+				<div class="container-row-t">
+					<span class="b-i"></span>
+					<span class="b-t">
+						<h2>番剧</h2>
+					</span>
+					<a href="#">TGS 2016要发车了！</a>
+				</div>
+				<div class="container-row-con clear">
+					<ul class="tg-list" id="tg-list">
+						<li>
+							<div class="tg-list-pic">
+								<a href="#">
+									<div class="preview">
+										<img src="images/nidemz.png" title="你的名字">
+										<div class="rightbottomtime">60.66</div>
+									</div>
+									<div class="vname">你的名字</div>
+								</a>
+								
+							</div>
+						</li>
+						<li>
+							<div class="tg-list-pic">
+								<a href="#">
+									<div class="preview">
+										<img src="images/aA.jpg" title="唇上之歌剧照">
+										<div class="rightbottomtime">60.66</div>
+									</div>
+									<div class="vname">掟上今日子的备忘录02</div>
+								</a>
+								
+							</div>
+						</li>
+						<li>
+							<div class="tg-list-pic">
+								<a href="#">
+									<div class="preview">
+										<img src="images/x.png" title="唇上之歌剧照">
+										<div class="rightbottomtime">60.66</div>
+									</div>
+									<div class="vname">掟上今日子的备忘录03</div>
+								</a>
+								
+							</div>
+						</li>
+						<li>
+							<div class="tg-list-pic">
+								<a href="#">
+									<div class="preview">
+										<img src="images/x.png" title="唇上之歌剧照">
+										<div class="rightbottomtime">60.66</div>
+									</div>
+									<div class="vname">掟上今日子的备忘录10</div>
+								</a>
+								
+							</div>
+						</li>
+						<li>
+							<div class="tg-list-pic">
+								<a href="#">
+									<div class="preview">
+										<img src="images/nidemz.png" title="你的名字">
+										<div class="rightbottomtime">60.66</div>
+									</div>
+									<div class="vname">你的名字</div>
+								</a>
+								
+							</div>
+						</li>
+						<li>
+							<div class="tg-list-pic">
+								<a href="#">
+									<div class="preview">
+										<img src="images/aA.jpg" title="唇上之歌剧照">
+										<div class="rightbottomtime">60.66</div>
+									</div>
+									<div class="vname">掟上今日子的备忘录02</div>
+								</a>
+								
+							</div>
+						</li>
+						<li>
+							<div class="tg-list-pic">
+								<a href="#">
+									<div class="preview">
+										<img src="images/x.png" title="唇上之歌剧照">
+										<div class="rightbottomtime">60.66</div>
+									</div>
+									<div class="vname">掟上今日子的备忘录03</div>
+								</a>
+								
+							</div>
+						</li>
+						<li>
+							<div class="tg-list-pic">
+								<a href="#">
+									<div class="preview">
+										<img src="images/x.png" title="唇上之歌剧照">
+										<div class="rightbottomtime">60.66</div>
+									</div>
+									<div class="vname">掟上今日子的备忘录10</div>
+								</a>
+								
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 推广内容音乐 -->
+			<div class="container-row">
+				<div class="container-row-t">
+					<span class="b-i"></span>
+					<span class="b-t">
+						<h2>音乐</h2>
+					</span>
+					<a href="#">TGS 2016要发车了！</a>
+				</div>
+				<div class="container-row-con clear">
+					<ul class="tg-list" id="tg-list">
+						<li>
+							<div class="tg-list-pic">
+								<a href="#">
+									<div class="preview">
+										<img src="images/zard.jpg" title="你的名字">
+										<div class="rightbottomtime">60.66</div>
+									</div>
+									<div class="vname">zard</div>
+								</a>
+								
+							</div>
+						</li>
+						<li>
+							<div class="tg-list-pic">
+								<a href="#">
+									<div class="preview">
+										<img src="images/zard2.jpg" title="唇上之歌剧照">
+										<div class="rightbottomtime">60.66</div>
+									</div>
+									<div class="vname">Good-bye My Loneliness</div>
+								</a>
+								
+							</div>
+						</li>
+						<li>
+							<div class="tg-list-pic">
+								<a href="#">
+									<div class="preview">
+										<img src="images/zard3.jpeg" title="唇上之歌剧照">
+										<div class="rightbottomtime">60.66</div>
+									</div>
+									<div class="vname">dan dan 心魅かれてく</div>
+								</a>
+								
+							</div>
+						</li>
+						<li>
+							<div class="tg-list-pic">
+								<a href="#">
+									<div class="preview">
+										<img src="images/zard.jpg" title="唇上之歌剧照">
+										<div class="rightbottomtime">60.66</div>
+									</div>
+									<div class="vname">IN MY ARMS TONIGHT</div>
+								</a>
+								
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 推广内容舞蹈 -->
+			<div class="container-row">
+				<div class="container-row-t">
+					<span class="b-i"></span>
+					<span class="b-t">
+						<h2>舞蹈</h2>
+					</span>
+					<a href="#">TGS 2016要发车了！</a>
+				</div>
+				<div class="container-row-con clear">
+					<ul class="tg-list" id="tg-list">
+						<li>
+							<div class="tg-list-pic">
+								<a href="#">
+									<div class="preview">
+										<img src="images/nidemz.png" title="你的名字">
+										<div class="rightbottomtime">60.66</div>
+									</div>
+									<div class="vname">你的名字</div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="tg-list-pic">
+								<a href="#">
+									<div class="preview">
+										<img src="images/aA.jpg" title="唇上之歌剧照">
+										<div class="rightbottomtime">60.66</div>
+									</div>
+									<div class="vname">掟上今日子的备忘录02</div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="tg-list-pic">
+								<a href="#">
+									<div class="preview">
+										<img src="images/x.png" title="唇上之歌剧照">
+										<div class="rightbottomtime">60.66</div>
+									</div>
+									<div class="vname">掟上今日子的备忘录03</div>
+								</a>
+								
+							</div>
+						</li>
+						<li>
+							<div class="tg-list-pic">
+								<a href="#">
+									<div class="preview">
+										<img src="images/x.png" title="唇上之歌剧照">
+										<div class="rightbottomtime">60.66</div>
+									</div>
+									<div class="vname">掟上今日子的备忘录10</div>
+								</a>
+								
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 内容 -->
+			<div class="content">
+				<div class="zhibo">
+					<ul>
+						<li><img src="images/3.png"></li>
+						<li><img src="images/4.png"></li>
+						<li><img src="images/154.png"></li>
+					</ul>
+					<div>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<div class="bgm-calender">
+					<div class="b-head">
+						<div class="b-tab">
+							<ul>
+								<li class="li-tab">
+									<span><em class="emhid"></em>最新</span>
+									<i class="b-icon b-icon-bianlian-n"></i>
+									<i class="b-icon b-icon-arrow"></i>
+								</li>
+								<li class="li-tab">
+									<span><em></em>一</span>
+									<i class="b-icon b-icon-bianlian-1"></i>
+									<i class="b-icon b-icon-arrow"></i>
+								</li>
+								<li class="li-tab">
+									<span><em></em>二</span>
+									<i class="b-icon b-icon-bianlian-2"></i>
+									<i class="b-icon b-icon-arrow"></i>
+								</li>
+								<li class="li-tab">
+									<span><em></em>三</span>
+									<i class="b-icon b-icon-bianlian-3"></i>
+									<i class="b-icon b-icon-arrow"></i>
+								</li>
+								<li class="li-tab">
+									<span><em></em>四</span>
+									<i class="b-icon b-icon-bianlian-4"></i>
+									<i class="b-icon b-icon-arrow"></i>
+								</li>
+								<li class="li-tab">
+									<span><em></em>五</span>
+									<i class="b-icon b-icon-bianlian-5"></i>
+									<i class="b-icon b-icon-arrow"></i>
+								</li>
+								<li class="li-tab">
+									<span><em></em>六</span>
+									<i class="b-icon b-icon-bianlian-6"></i>
+									<i class="b-icon b-icon-arrow"></i>
+								</li>
+								<li class="li-tab">
+									<span><em></em>日</span>
+									<i class="b-icon b-icon-bianlian-7"></i>
+									<i class="b-icon b-icon-arrow"></i>
+								</li>
+							</ul>
+							<a href="CC2.html" class="c-clink">
+							新番放送表>
+							</a>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="all-body">
+						<div class="b-body show">
+							<div class="tv-item">
+								<a href="#">
+									<img src="images/sp160919_203516.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">家入レオ</a>
+									<p>更新至<span>7集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#">
+									<img src="images/高清封面/1掟上今日子の備忘録.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">掟上今日子の備忘録</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#">
+									<img src="images/高清封面/2掟上今日子の推薦文.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">掟上今日子の推薦文</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#">
+									<img src="images/高清封面/3掟上今日子の挑戦状.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">掟上今日子の挑戦状</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#">
+									<img src="images/高清封面/4掟上今日子の遺言書.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">掟上今日子の遺言書</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#">
+									<img src="images/高清封面/5掟上今日子の退職願.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">掟上今日子の退職願</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="b-body">
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/342Crawdaunt.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">家入レオ</a>
+									<p>更新至<span>22集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/342Crawdaunt.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">家入レオ</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/images.jpg">
+								</a>
+								<div class="r-tvname">
+									<a href="#">家入レオ</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/images.jpg">
+								</a>
+								<div class="r-tvname">
+									<a href="#">家入レオ</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/images.jpg">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/images.jpg">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="b-body">
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/154.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/154.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/154.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/154.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/154.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/154.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="b-body">
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/x.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/x.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/x.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/x.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/x.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/x.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="b-body">
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/友人帐.jpg">
+								</a>
+								<div class="r-tvname">
+									<a href="#">夏目友人帐</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/154.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/154.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/154.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/154.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/154.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="b-body">
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/375.00.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/375.00.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/342Crawdaunt.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/342Crawdaunt.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/342Crawdaunt.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/342Crawdaunt.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="b-body">
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/名侦探.jpg">
+								</a>
+								<div class="r-tvname">
+									<a href="#">名侦探柯南</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/375.00.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/342Crawdaunt.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/006Charizard-Mega_X.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/342Crawdaunt.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/342Crawdaunt.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="b-body">
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/龙珠.jpg">
+								</a>
+								<div class="r-tvname">
+									<a href="#">龙珠超</a>
+									<p>更新至<span>100集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/dragon_ball-wallpaper-1920x1080.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/long.jpg">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#" >
+									<img src="images/342Crawdaunt.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#">
+									<img src="images/342Crawdaunt.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+							<div class="tv-item">
+								<a href="#">
+									<img src="images/342Crawdaunt.png">
+								</a>
+								<div class="r-tvname">
+									<a href="#">das</a>
+									<p>更新至<span>25集</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<!-- 焦点大图 -->
+			<!-- <div id="focPic" class="clear">
+				<ul id="pic">
+					<li>
+						<img src="images/高清封面/1掟上今日子の備忘録.png">
+						<div class="item">
+							<a href="#">
+							<h2>高清封面/1掟上今日子の備忘録</h2>
+							</a>
+							<p>高清封面/1掟上今日子の備忘録</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/高清封面/2掟上今日子の推薦文.png">
+						<div class="item">
+							<a href="#">
+							<h2>高清封面/2掟上今日子の推薦文</h2>
+							</a>
+							<p>高清封面/2掟上今日子の推薦文</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/高清封面/3掟上今日子の挑戦状.png">
+						<div class="item">
+							<a href="#">
+							<h2>高清封面/3掟上今日子の挑戦状</h2>
+							</a>
+							<p>高清封面/3掟上今日子の挑戦状</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/高清封面/4掟上今日子の遺言書.png">
+						<div class="item">
+						<a href="#">
+						<h2>高清封面/4掟上今日子の遺言書</h2>
+						</a>
+						<p>高清封面/4掟上今日子の遺言書</p>
+					</div>
+					</li>
+					<li>
+						<img src="images/高清封面/5掟上今日子の退職願.png">
+						<div class="item">
+							<a href="#">
+							<h2>高清封面/5掟上今日子の退職願</h2>
+							</a>
+							<p>高清封面/5掟上今日子の退職願</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/高清封面/6掟上今日子の婚姻届.png">
+						<div class="item">
+							<a href="#">
+							<h2>高清封面/6掟上今日子の婚姻届</h2>
+							</a>
+							<p>高清封面/6掟上今日子の婚姻届</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/高清封面/7掟上今日子の家計簿.png">
+						<div class="item">
+							<a href="#">
+							<h2>高清封面/7掟上今日子の家計簿</h2>
+							</a>
+							<p>高清封面/7掟上今日子の家計簿</p>
+						</div>
+					</li>
+				</ul>
+				<ol class="btn">
+					<li ><a href="javascript:;"></a></li>
+					<li ><a href="javascript:;"></a></li>
+					<li ><a href="javascript:;"></a></li>
+					<li ><a href="javascript:;"></a></li>
+					<li ><a href="javascript:;"></a></li>
+					<li ><a href="javascript:;"></a></li>
+					<li ><a href="javascript:;"></a></li>
+				</ol>
+			</div> -->
+
+			<div class="clear"></div>
+
+		</div>
+		<!-- 中间各种内容部分结束 -->
+		<!-- 尾部内容 -->
+		<div class="footer">
+			<ul class="postcards">
+				<li>
+					<div class="tips">bibibib</div>
+					<div class="cards"><a href="#">关于我们</a></div>
+					<div class="cards"><a href="#">友情链接</a></div>
+					<div class="cards"><a href="#">周边</a></div>
+					<div class="cards"><a href="#">联系我们</a></div>
+					<div class="cards"><a href="#">加入我们</a></div>
+					<div class="cards"><a href="#">投诉</a></div>
+				</li>
+				<li>
+					<div class="tips">传送门</div>
+					<div class="cards"><a href="#">高级弹幕</a></div>
+					<div class="cards"><a href="#">帮助中心</a></div>
+					<div class="cards"><a href="#">活动中心</a></div>
+					<div class="cards"><a href="#">壁纸站</a></div>
+					<div class="cards"><a href="#">名人堂</a></div>
+					<div class="cards"><a href="#">建议/bug汇报</a></div>
+				</li>
+				<li>
+					<div class="social"><a href="#">
+						<div class="weixin"></div>
+						<em>官方微信</em>
+					</a></div>
+					<div class="social"><a href="#">
+						<div class="weibo"></div>
+						<em>新浪微博</em>
+					</a></div>
+					<div class="social"><a href="#">
+						<div class="phone"></div>
+						<em>手机客户端</em>
+					</a></div>
+				</li>
+			</ul>
+			<img src="images/Copyright_bg.jpg">
+			<p>广播电视节目制作经营许可证：（沪）字第1248号网络文化经营许可证：沪网文[2013]0480-056号信息网络传播视听节目许可证：0910417copyright&copy;</p>
+		</div>
+		<!-- 尾部内容结束 -->
+	</div>
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/jq.js"></script>
+	<!-- <script type="text/javascript" src="js/焦点图.js"></script> -->
+
+</body>
+</html>
