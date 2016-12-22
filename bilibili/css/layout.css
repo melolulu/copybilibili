@@ -1,0 +1,45 @@
+.main{
+	width:725px;
+	margin:0 auto;
+	height:600px;
+	overflow:hidden;
+	background:#ccc;
+}
+#pic div img,
+#pic{
+	width:600px;
+	height:480px;
+}
+#pic div{
+
+	display:none;
+}
+#pic div img{
+	/*倒影效果*/
+	-webkit-box-reflect:below 0px -webkit-gradient(
+				linear,
+				left top,
+				left bottom,
+				from(transparent),
+				color-stop(50%,transparent),
+				to(rgba(255,255,255,0.3))
+				);
+	/*-webkit-transition:all 5s;*/
+}
+#ctrl{
+	width:100%;
+}
+#ctrl a{
+	display:inline-block;
+	width:120px;
+	height:120px;
+	background-color:#ccc;
+	margin-right:-5px;
+}
+
+#pic .show{
+	display:block;
+}
+#ctrl .select{
+	background-color:green;
+}
