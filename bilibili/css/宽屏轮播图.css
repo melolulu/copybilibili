@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*大图样式*/
+
+.widepic {
+    margin: 50px 0 0 0;
+    width: 100%;
+    height: 600px;
+    background: #f6bfbc;
+    position: relative;
+}
+
+#Outpic {
+    height: 600px;
+    overflow: hidden;
+}
+
+#Outpic img {
+    width: 100%;
+    height: 600px;
+    display: block;
+}
+
+.Inpic {
+    height: auto;
+}
+
+
+/*按钮样式*/
+
+#widebtn {
+    width: 100%;
+    height: 90px;
+    background: rgba(51, 51, 51, 0.6);
+    /*opacity:0.6;*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#widebtn #widebtn1 {
+    width: auto;
+    text-align: center;
+}
+
+#widebtn span {
+    display: inline-block;
+    position: absolute;
+    width: 22px;
+    height: 24px;
+    top: 33px;
+}
+
+#widebtn .w_left {
+    background: url(../images/img/left.png);
+    left: 300px;
+}
+
+#widebtn .w_left:hover {
+    background: url(../images/img/Cleft.png);
+}
+
+#widebtn .w_right {
+    background: url(../images/img/right.png);
+    right: 300px;
+}
+
+#widebtn .w_right:hover {
+    background: url(../images/img/Cright.png);
+}
+
+.Spic {
+    width: 115px;
+    height: 64px;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 7px;
+    overflow: hidden;
+    margin: 13px 10px 13px 0;
+}
+
+.first {
+    border: 2px solid #f6bfbc;
+}
+
+.Spic img {
+    width: 115px;
+    height: 64px;
+}
+

@@ -1,0 +1,78 @@
+body {
+    background: url(../images/sp160923_192423.png);
+    font: 24px/30px 楷体;
+}
+
+#article {
+    width: 800px;
+    margin: 20px auto;
+}
+#article .tt{
+    font: 28px/30px 楷体;
+}
+#article p{
+    font: 18px/30px 楷体;
+}
+#article span {
+    position: relative;
+    color: #F66F50;
+}
+
+.articleTitle {
+    height: 360px;
+    overflow: hidden;
+    background: url(../images/layer_lower_bg.png) no-repeat 250px 0;
+}
+
+
+#article:after {
+    content: "";
+    display: block;
+    width: 41px;
+    height: 41px;
+    margin: 46px auto 0;
+    background: url(../images/novel_symbol_icn.png) left top no-repeat;
+}
+
+.articleTitle img {
+    display: block;
+    margin: 60px auto;
+}
+
+.tpic {
+    display: block;
+    width: 41px;
+    margin: 0 auto;
+}
+
+.tt {
+    text-align: center;
+    font: 36px 楷体;
+}
+
+#doom1 p,
+#today1 p {
+    text-indent: 2em;
+    /*display:inline;*/
+}
+
+#doom1 img,
+#today1 img {
+    border-radius: 3px;
+    float: left;
+}
+
+#doom1,
+#today1 {
+    width: 300px;
+    height: auto;
+    float: left;
+    background: #fff;
+    border: 2px solid #333;
+    border-radius: 5px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    z-index: 5;
+}
+

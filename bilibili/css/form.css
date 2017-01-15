@@ -1,0 +1,58 @@
+body{
+
+}
+form{
+	width:800px;
+	height:600px;
+	text-align:center;
+	margin:0 auto;
+}
+form div{
+	width:800px;
+	height:30px;
+}
+form label{
+	float:left;
+	clear:both;
+}
+span{
+	display:inline-block;
+	height:30px;
+	width:150px;
+}
+.msg{
+	display:none;
+	float: right;
+	clear: both;
+}
+.ok,
+.err,
+.blank,
+.ati{
+	float: left;
+	width:120px;
+	height:120px;
+}
+.ok{
+		background:url(../images/253.00.png) no-repeat;
+}
+.blank{
+	background:url(../images/009.01.png) no-repeat;
+}
+.ati{
+	background:url(../images/025.00.png) no-repeat;
+}
+.err{
+	background:url(../images/065.01.png) no-repeat;
+}
+#count{
+	visibility:hidden;
+}
+em{
+	float: left;
+	clear: both;
+}
+.active{
+	display:inline-block;
+	background:red;
+}
